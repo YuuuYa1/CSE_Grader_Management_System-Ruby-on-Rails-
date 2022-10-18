@@ -1,0 +1,33 @@
+<div class="signUpPage">
+  <div class="form">
+    <div class="title">Sign Up</div>
+    <%= form_for(@user) do |f| %>
+      <% if @user.errors.any? %>
+        <h2>Errors:</h2>
+        <div class="alert alert-danger">
+        <ul>
+          <% @user.errors.full_messages.each do |message| %>
+            <div><li><% message %></li></div>
+          <% end %>
+        </div>
+        <ul>
+      <% end %>
+      <div class="input">
+        <%= f.label :Email, "Email" %>
+        <%= f.text_field :email, class:"inputField"%><br>
+      </div>
+      <div class="input">
+        <%= f.label :Password %>
+        <%= f.password_field :password,class:"inputField"%><br>
+      </div>
+      <div class="input">
+      <%= f.label :Password_Confirmation, "Confirmation" %>
+      <%= f.password_field :password_confirmation, class:"inputField"%><br>
+      </div>
+      
+      <div class="submit">
+      <%= f.submit "Create my account", class: "submitButton" %>
+      </div>
+    <% end %> 
+  </div>
+</div>

@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree 
+ *= require_self
+ */
+ body{
+     margin: 0px;
+     color: white;
+ }
+.homePage, .signUpPage, .loadPage{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(background.jpg);
+    background-size: 100%;
+    background-position: center;
+}
+.signUpPage, .loadPage{
+    display: flex;
+    flex-direction: column;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.courseContent {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 15vh;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.homeContent {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+.form, #selection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40vw;
+    height: 40vh;
+    max-width: 700px;
+}
+.title, .submit, .goback{
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    margin: 2vh;
+}
+.input, label {
+    font-size: 1.5vw;
+}
+.inputField {
+    width: 40vw;
+    height: 3vh;
+    border-radius: 1vw;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    margin-left:auto;
+    margin-right: auto;
+}
+#term, #campus{
+    width: 20vw;
+    height: 3vh;
+    border-radius: 1vw;
+}
+.submitButton,.gobackButton a>input{
+    font-size: 2vw;
+    background-color: black;
+    color: white;
+    border-radius: 1vw;
+    margin-top: 2vh;
+}
+
+h1 {
+    font-size: 3vw;
+}
+.courseContent>a{
+    font-size: 2vw;
+    width: 17.5vw;
+    position: relative;
+    left: 41.25vw;
+    color: black;
+    background-color: white;
+    border-radius: 1vw;
+}
+
+.hint{
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4vh;
+}

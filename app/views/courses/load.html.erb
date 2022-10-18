@@ -1,0 +1,39 @@
+<div class = "loadPage">
+	<form id = "selection",action="/courses/load?term=<%=params[:term]%>&campus=<%=params[:campus]%>">
+		<div class = "hint"> Please select term and campus </div>
+			
+		<div class = "options">
+			<label for="term">term:</label>
+			<select name="term" id="term">
+				<option value="1222">Spring 2022</option>
+				<option value="1224">Summer 2022</option>
+				<option value="1228">Autumn 2022</option>
+			</select>
+		
+			<label for="campus">Campus:</label>
+			<select name="campus" id="campus">
+				<option value="nwk">Newark</option>
+				<option value="mns">Mansifield</option>
+				<option value="wst">Wooster</option>
+				<option value="mrn">Marion</option>
+				<option value="lma">Lima</option>
+				<option value="col">Columbus</option>
+			</select>
+		</div>
+
+		<div class="submit">
+			
+			<input type="submit" value="reload">
+			
+		</div>
+		<div class="goback">
+			<%= link_to "../../admin/courses", class: "btn btn-trestle" do %>  
+			<input type="submit" value="go to Course">
+			<% end %>
+		</div>
+		
+		
+		
+
+	</form>  	
+</div>
